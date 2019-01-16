@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.271
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AlgoConsoleLib", "Algorithms\AlgoConsoleLib.csproj", "{053499BF-F4E2-4A10-8A97-92B7FD5A79D3}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AlgoConsoleLib", "AlgoConsoleLib\AlgoConsoleLib.csproj", "{053499BF-F4E2-4A10-8A97-92B7FD5A79D3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AlgorithmsLibrary", "ValidParentheses\AlgorithmsLibrary.csproj", "{44E51AD5-935D-443A-AC84-241C58475F76}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AlgorithmsLibrary", "AlgorithmsLibrary\AlgorithmsLibrary.csproj", "{44E51AD5-935D-443A-AC84-241C58475F76}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

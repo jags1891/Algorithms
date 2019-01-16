@@ -50,7 +50,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\ValidParentheses\AlgorithmsLibrary.csproj">
+    <ProjectReference Include="..\AlgorithmsLibrary\AlgorithmsLibrary.csproj">
       <Project>{44e51ad5-935d-443a-ac84-241c58475f76}</Project>
       <Name>AlgorithmsLibrary</Name>
     </ProjectReference>
