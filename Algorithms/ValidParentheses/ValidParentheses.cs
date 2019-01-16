@@ -25,10 +25,7 @@ namespace ValidParentheses
                     return false;
             }
 
-            if (Open.Count > 0)
-                return false;
-
-            return true;
+            return (Open.Count < 1);
         }
     }
 }
