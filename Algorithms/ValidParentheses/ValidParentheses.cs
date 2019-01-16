@@ -19,7 +19,7 @@ namespace ValidParentheses
 
             foreach (char c in s)
             {
-                if (c == '{' || c == '[' || c == '(')
+                if (ParanDictionary.ContainsKey(c))
                     Open.Push(c);
                 else if (Open.Count < 1 || ParanDictionary[Open.Pop()] != c)
                     return false;
