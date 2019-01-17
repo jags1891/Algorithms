@@ -10,24 +10,32 @@ namespace AlgoConsoleLib
 {
     class Program
     {
-        static void Main(string[] args)
-        {
-            DFS();
+        static int[] vertices = new[] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
 
-        }
-
-        public static void DFS()
-        {
-            var vertices = new[] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
-
-            var edges = new[]{Tuple.Create(1,2), Tuple.Create(1,3),
+        static Tuple<int, int>[]  edges = new[]{Tuple.Create(1,2), Tuple.Create(1,3),
                 Tuple.Create(2,4), Tuple.Create(3,5), Tuple.Create(3,6),
                 Tuple.Create(4,7), Tuple.Create(5,7), Tuple.Create(5,8),
                 Tuple.Create(5,6), Tuple.Create(8,9), Tuple.Create(9,10)};
 
-            var graph = new Graph<int>(vertices, edges, false);
-            var search = new GraphSearch();
-            Console.WriteLine(string.Join(", ", search.DFS(graph, 1)));
+        static Graph<int> unDirectedgraph = new Graph<int>(vertices, edges, false);
+
+        static GraphSearch search = new GraphSearch();
+
+        static void Main(string[] args)
+        {
+            var path = new List<int>();
+            var Prev = new Dictionary<int, int>();
+
+            Console.WriteLine(string.Join(", ", search.DFS(unDirectedgraph, 1)));
+            Console.WriteLine(string.Join(", ", search.BFS(unDirectedgraph, 1, ref Prev, v => path.Add(v))));
+            Console.WriteLine("Trace Path...");
+            Console.WriteLine(string.Join(", ", path));
+            foreach (var vertex in vertices)
+                Console.WriteLine("shortest path to {0,2}: {1}",
+                        vertex, string.Join(", ", search.ShortestPathFromPrev(Prev,1,vertex)));
+
         }
+
+       
     }
 }
