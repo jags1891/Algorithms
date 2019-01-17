@@ -31,11 +31,28 @@ namespace AlgoConsoleLib
             Console.WriteLine("Trace Path...");
             Console.WriteLine(string.Join(", ", path));
             foreach (var vertex in vertices)
-                Console.WriteLine("shortest path to {0,2}: {1}",
-                        vertex, string.Join(", ", search.ShortestPathFromPrev(Prev,1,vertex)));
+                Console.WriteLine("shortest path to {0,2}: {1}", vertex, string.Join(", ", search.ShortestPathFromPrev(Prev,1,vertex)));
+            Console.WriteLine("Topological Sort....");
+            Console.WriteLine(string.Join(", ", TopSort()));
 
         }
 
-       
+        public static IEnumerable<int> TopSort()
+        {
+            int[] vertices = new[] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11 };
+
+            Tuple<int, int>[] edges = new[]{Tuple.Create(1,3), Tuple.Create(1,2),
+                Tuple.Create(3,4), Tuple.Create(5,6), Tuple.Create(6,3),
+                Tuple.Create(3,8),Tuple.Create(8,11)};
+
+            Graph<int> Directedgraph = new Graph<int>(vertices, edges, true);
+
+            TopologicalSort<int> topological = new TopologicalSort<int>();
+
+            return topological.TopSort(Directedgraph);
+
+        }
     }
+
+   
 }

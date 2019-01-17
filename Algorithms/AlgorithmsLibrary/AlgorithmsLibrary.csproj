@@ -43,6 +43,7 @@
   <ItemGroup>
     <Compile Include="DataStructures\Graph.cs" />
     <Compile Include="GraphSearch.cs" />
+    <Compile Include="TopologicalSort.cs" />
     <Compile Include="ValidParentheses.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
