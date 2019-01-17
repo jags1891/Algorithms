@@ -20,6 +20,9 @@ namespace AlgoConsoleLib
         static Graph<int> unDirectedgraph = new Graph<int>(vertices, edges, false);
 
         static GraphSearch search = new GraphSearch();
+        static Anagram anagram = new Anagram();
+
+
 
         static void Main(string[] args)
         {
@@ -34,6 +37,8 @@ namespace AlgoConsoleLib
                 Console.WriteLine("shortest path to {0,2}: {1}", vertex, string.Join(", ", search.ShortestPathFromPrev(Prev,1,vertex)));
             Console.WriteLine("Topological Sort....");
             Console.WriteLine(string.Join(", ", TopSort()));
+            Console.WriteLine("Is 'create' anagram of 'eaterc'? : " + anagram.isAnagram("create","eaterc"));
+
 
         }
 
