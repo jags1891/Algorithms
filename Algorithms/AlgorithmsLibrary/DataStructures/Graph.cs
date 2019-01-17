@@ -9,8 +9,13 @@ namespace AlgorithmsLibrary.DataStructures
     public class Graph<T>
     {
         public Graph() { }
-        public Graph(IEnumerable<T> vertices, IEnumerable<Tuple<T, T>> edges)
+
+        bool _isDirected;
+
+        public Graph(IEnumerable<T> vertices, IEnumerable<Tuple<T, T>> edges, bool isDirectedGraph)
         {
+            _isDirected = isDirectedGraph;
+
             foreach (var vertex in vertices)
                 AddVertex(vertex);
 
@@ -30,7 +35,9 @@ namespace AlgorithmsLibrary.DataStructures
             if (AdjacencyList.ContainsKey(edge.Item1) && AdjacencyList.ContainsKey(edge.Item2))
             {
                 AdjacencyList[edge.Item1].Add(edge.Item2);
-                AdjacencyList[edge.Item2].Add(edge.Item1);
+
+                if(!_isDirected)
+                    AdjacencyList[edge.Item2].Add(edge.Item1);
             }
         }
     }
