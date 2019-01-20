@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using AlgorithmsLibrary.DataStructures;
 
-namespace AlgorithmsLibrary
+namespace AlgorithmsLibrary.Graphs
 {
     public class GraphSearch
     {

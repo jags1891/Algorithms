@@ -41,11 +41,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Anagram.cs" />
+    <Compile Include="Strings\Anagram.cs" />
     <Compile Include="DataStructures\Graph.cs" />
-    <Compile Include="GraphSearch.cs" />
-    <Compile Include="TopologicalSort.cs" />
-    <Compile Include="ValidParentheses.cs" />
+    <Compile Include="Graphs\GraphSearch.cs" />
+    <Compile Include="Graphs\TopologicalSort.cs" />
+    <Compile Include="Strings\Palindrome.cs" />
+    <Compile Include="Strings\ValidParentheses.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

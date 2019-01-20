@@ -4,6 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using AlgorithmsLibrary;
+using AlgorithmsLibrary.Strings;
+using AlgorithmsLibrary.Graphs;
 using AlgorithmsLibrary.DataStructures;
 
 namespace AlgoConsoleLib
@@ -39,10 +41,22 @@ namespace AlgoConsoleLib
             Console.WriteLine(string.Join(", ", TopSort()));
             Console.WriteLine("Is 'create' anagram of 'eaterc'? : " + anagram.isAnagram("create","eaterc"));
 
+            void checkPalindrome(string str){
+                Palindrome p = new Palindrome();
+                Console.WriteLine("Is this word a palindrome? " + str);
+                Console.WriteLine(p.isPalidrome(str, true));
+            };
+
+            checkPalindrome("hello");
+            checkPalindrome("motor");
+            checkPalindrome("rotor");
+
 
         }
 
-        public static IEnumerable<int> TopSort()
+     
+
+    public static IEnumerable<int> TopSort()
         {
             int[] vertices = new[] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11 };
 
