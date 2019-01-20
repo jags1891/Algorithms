@@ -44,7 +44,7 @@ namespace AlgoConsoleLib
             void checkPalindrome(string str){
                 Palindrome p = new Palindrome();
                 Console.WriteLine("Is this word a palindrome? " + str);
-                Console.WriteLine(p.isPalidrome(str, true));
+                Console.WriteLine(p.isPalidrome(str, false));
             };
 
             checkPalindrome("hello");

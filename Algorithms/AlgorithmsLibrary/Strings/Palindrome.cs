@@ -8,16 +8,26 @@ namespace AlgorithmsLibrary.Strings
 {
     public class Palindrome
     {
-        public bool isPalidrome(string str, bool recursive)
+        /// <summary>
+        /// Chek if the string is palidrome
+        /// </summary>
+        /// <param name="str"></param>
+        /// <param name="recursive">true for recursive and false for itirative</param>
+        /// <returns></returns>
+        public bool isPalidrome(string str, bool recursive=true)
         {
             str = str.ToLower();
             if (recursive)
                 return isPalindromUsingRecursion(str);
 
             return isPalindromItirative(str);
-
         }
 
+        /// <summary>
+        /// Check if the string is palidrome using recursion
+        /// </summary>
+        /// <param name="str"></param>
+        /// <returns></returns>
         private bool isPalindromUsingRecursion(string str)
         {
             if (str.Length <= 1)
@@ -29,11 +39,28 @@ namespace AlgorithmsLibrary.Strings
               return false;
         }
 
+        /// <summary>
+        /// Check if the string is palidrome itiratively
+        /// </summary>
+        /// <param name="str"></param>
+        /// <returns></returns>
         private bool isPalindromItirative(string str)
         {
-           //To be implemented
+            if (str.Length <= 1)
+                return true;
 
-            return false;
+            int start = 0;
+            int last = str.Length-1;
+
+            while (start < last)
+            {
+                if (str[start] != str[last])
+                    return false;
+                start++;
+                last--;
+            }
+
+            return true;
         }
     }
 }
