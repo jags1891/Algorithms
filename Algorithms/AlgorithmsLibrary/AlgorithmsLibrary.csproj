@@ -43,6 +43,7 @@
   <ItemGroup>
     <Compile Include="Arrays\Misc.cs" />
     <Compile Include="Sorting\BubbleSort.cs" />
+    <Compile Include="Sorting\SelectionSort.cs" />
     <Compile Include="Strings\Anagram.cs" />
     <Compile Include="DataStructures\Graph.cs" />
     <Compile Include="Graphs\GraphSearch.cs" />

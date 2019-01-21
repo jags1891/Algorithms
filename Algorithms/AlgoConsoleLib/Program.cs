@@ -102,6 +102,11 @@ namespace AlgoConsoleLib
             Console.Write("arr = { 64, 34, 25, 12, 22, 11, 90 } => Sorted array = ");
             printArray(arr);
 
+            int[] arr_1 = { 64, 34, 25, 12, 22, 11, 90 };
+            SelectionSort sSort = new SelectionSort();
+            sSort.Sort(arr_1);
+            Console.Write("arr_1 = { 64, 34, 25, 12, 22, 11, 90 } => Sorted array = ");
+            printArray(arr_1);
 
 
         }
