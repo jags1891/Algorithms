@@ -4,6 +4,11 @@ namespace AlgorithmsLibrary.Strings
 {
     public class ValidParentheses
     {
+        /// <summary>
+        /// Given a string containing just the characters '(', ')', '{', '}', '[' and ']', determine if the input string is valid.
+        /// </summary>
+        /// <param name="s"></param>
+        /// <returns></returns>
         public bool IsValid(string s)
         {
             Dictionary<char, char> ParanDictionary = new Dictionary<char, char>();

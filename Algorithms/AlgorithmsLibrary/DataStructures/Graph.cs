@@ -3,6 +3,10 @@ using System.Collections.Generic;
 
 namespace AlgorithmsLibrary.DataStructures
 {
+    /// <summary>
+    /// Graph DS implementation with adjecency list.
+    /// </summary>
+    /// <typeparam name="T"></typeparam>
     public class Graph<T>
     {
         public Graph() { }

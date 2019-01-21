@@ -4,6 +4,12 @@
     {
         static int NO_OF_CHAR = 256; //8 bit extended ASCHII
 
+        /// <summary>
+        /// Returns true if word2 is an Anagram of word1
+        /// </summary>
+        /// <param name="word1"></param>
+        /// <param name="word2"></param>
+        /// <returns>Returns true if word2 is an Anagram of word1 else returns false</returns>
         public bool isAnagram(string word1, string word2)
         {
             word1 = word1.Trim();
