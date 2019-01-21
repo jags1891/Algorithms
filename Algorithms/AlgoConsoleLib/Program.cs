@@ -1,9 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using AlgorithmsLibrary;
 using AlgorithmsLibrary.Strings;
 using AlgorithmsLibrary.Graphs;
 using AlgorithmsLibrary.Arrays;
