@@ -7,8 +7,8 @@
     <ProjectGuid>{44E51AD5-935D-443A-AC84-241C58475F76}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>ValidParentheses</RootNamespace>
-    <AssemblyName>ValidParentheses</AssemblyName>
+    <RootNamespace>AlgorithmsLibrary</RootNamespace>
+    <AssemblyName>AlgorithmsLibrary</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
