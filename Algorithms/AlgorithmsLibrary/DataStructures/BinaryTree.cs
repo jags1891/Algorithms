@@ -78,12 +78,12 @@ namespace AlgorithmsLibrary.DataStructures
     {
         public TreeNode root;
 
-        BinaryTree(int key)
+        public BinaryTree(int key)
         {
             root = new TreeNode(key);
         }
 
-        BinaryTree()
+        public BinaryTree()
         {
             root = null;
         }
