@@ -34,23 +34,25 @@ namespace AlgorithmsLibrary.DataStructures
     {
         public TreeNode root;
 
-        public TreeNode insert(int val)
+        public TreeNode Insert(int val)
         {
             if (root == null)
             {
-                root = new TreeNode();
-                root.value = val;
+                root = new TreeNode
+                {
+                    value = val
+                };
             }
            
-            return insert(root,val);
+            return Insert(root,val);
         }
 
-        private TreeNode insert(TreeNode node, int val)
+        private TreeNode Insert(TreeNode node, int val)
         {
             if (val < node.value)
-                node.left = insert(node.left, val);
+                node.left = Insert(node.left, val);
             else
-                node.right = insert(node.right, val);
+                node.right = Insert(node.right, val);
             return node;
         }
 
