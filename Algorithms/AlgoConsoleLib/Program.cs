@@ -6,6 +6,8 @@ using System.Threading.Tasks;
 using AlgorithmsLibrary;
 using AlgorithmsLibrary.Strings;
 using AlgorithmsLibrary.Graphs;
+using AlgorithmsLibrary.Arrays;
+using AlgorithmsLibrary.Sorting;
 using AlgorithmsLibrary.DataStructures;
 
 namespace AlgoConsoleLib
@@ -51,12 +53,73 @@ namespace AlgoConsoleLib
             checkPalindrome("motor");
             checkPalindrome("rotor");
 
+            Misc misc = new Misc();
+
+            int[] arr1 = { 5, 6, 1, 2, 3, 4 };
+            int n1 = arr1.Length;
+            Console.WriteLine("The minimum element is " +
+                               misc.FindMinInSortedRotated(arr1, 0, n1 - 1));
+
+            int[] arr2 = { 1, 2, 3, 4 };
+            int n2 = arr2.Length;
+            Console.WriteLine("The minimum element is " +
+                               misc.FindMinInSortedRotated(arr2, 0, n2 - 1));
+
+            int[] arr3 = { 1 };
+            int n3 = arr3.Length;
+            Console.WriteLine("The minimum element is " +
+                               misc.FindMinInSortedRotated(arr3, 0, n3 - 1));
+
+            int[] arr4 = { 1, 2 };
+            int n4 = arr4.Length;
+            Console.WriteLine("The minimum element is " +
+                               misc.FindMinInSortedRotated(arr4, 0, n4 - 1));
+
+            int[] arr5 = { 2, 1 };
+            int n5 = arr5.Length;
+            Console.WriteLine("The minimum element is " +
+                               misc.FindMinInSortedRotated(arr5, 0, n5 - 1));
+
+            int[] arr6 = { 5, 6, 7, 1, 2, 3, 4 };
+            int n6 = arr6.Length;
+            Console.WriteLine("The minimum element is " +
+                               misc.FindMinInSortedRotated(arr6, 0, n1 - 1));
+
+            int[] arr7 = { 1, 2, 3, 4, 5, 6, 7 };
+            int n7 = arr7.Length;
+            Console.WriteLine("The minimum element is " +
+                               misc.FindMinInSortedRotated(arr7, 0, n7 - 1));
+
+            int[] arr8 = { 2, 3, 4, 5, 6, 7, 8, 1 };
+            int n8 = arr8.Length;
+            Console.WriteLine("The minimum element is " +
+                               misc.FindMinInSortedRotated(arr8, 0, n8 - 1));
+
+            int[] arr9 = { 3, 4, 5, 1, 2 };
+            int n9 = arr9.Length;
+            Console.WriteLine("The minimum element is " +
+                               misc.FindMinInSortedRotated(arr9, 0, n9 - 1));
+
+            int[] arr = { 64, 34, 25, 12, 22, 11, 90 };
+            BubbleSort bSort = new BubbleSort();
+            bSort.Sort(arr);
+            Console.Write("arr = { 64, 34, 25, 12, 22, 11, 90 } => Sorted array = ");
+            printArray(arr);
+
+
 
         }
 
-     
 
-    public static IEnumerable<int> TopSort()
+        public static void printArray(int[] arr)
+        {
+            int n = arr.Length;
+            for (int i = 0; i < n; ++i)
+                Console.Write(arr[i] + " ");
+            Console.WriteLine();
+        }
+
+        public static IEnumerable<int> TopSort()
         {
             int[] vertices = new[] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11 };
 
