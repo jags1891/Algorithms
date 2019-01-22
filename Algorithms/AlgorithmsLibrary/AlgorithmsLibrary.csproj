@@ -46,11 +46,6 @@
     <Compile Include="DataStructures\BinaryTree.cs" />
     <Compile Include="DataStructures\MyLexicon.cs" />
     <Compile Include="Graphs\WordLadder.cs" />
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Resources.resx</DependentUpon>
-    </Compile>
     <Compile Include="Sorting\BubbleSort.cs" />
     <Compile Include="Sorting\SelectionSort.cs" />
     <Compile Include="Strings\Anagram.cs" />
@@ -63,12 +58,6 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="DataStructures\Data\words.txt" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Properties\Resources.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
-    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
