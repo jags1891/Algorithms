@@ -50,7 +50,9 @@ namespace AlgorithmsLibrary.Graphs
             {
                 level++;
 
-                for(int levelItems = 0; levelItems < queue.Count; levelItems++)
+                int queueCount = queue.Count;
+
+                for (int levelItems = 0; levelItems < queueCount; levelItems++)
                 {
                     string Orignalword = queue.Dequeue();
 
