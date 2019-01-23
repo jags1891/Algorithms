@@ -1,18 +1,15 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 using AlgorithmsLibrary.DataStructures;
 
 namespace AlgorithmsLibrary.Graphs
 {
     /// <summary>
-    /// To be implemented
+    /// WordLadder
     /// </summary>
     public class WordLadder
     {
-
         /// <summary>
         /// LeetCode Problem:
         /// Given two words (beginWord and endWord), and a dictionary's word list, 
@@ -89,7 +86,6 @@ namespace AlgorithmsLibrary.Graphs
 
             return 0;
         }
-
 
     }
 }
