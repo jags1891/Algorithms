@@ -108,6 +108,10 @@ namespace AlgoConsoleLib
             Console.Write("arr_1 = { 64, 34, 25, 12, 22, 11, 90 } => Sorted array = ");
             printArray(arr_1);
 
+            WordLadder wordLadder = new WordLadder();
+            string strpath = "";
+            int i= wordLadder.LadderLength("hit", "cog", ref strpath);
+            Console.WriteLine(strpath);
 
         }
 

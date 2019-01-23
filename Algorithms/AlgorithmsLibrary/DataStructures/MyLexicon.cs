@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.IO;
 using System.Linq;
 using System.Reflection;
@@ -30,13 +31,25 @@ namespace AlgorithmsLibrary.DataStructures
             }
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        public  HashSet<string> Dictionary
+        {
+            get
+            {
+                return new HashSet<string>(_words);
+            }
+        }
+
+
         private MyLexicon()
         {
 
         }
 
         
-        static List<string> words = System.IO.File.ReadAllText(System.IO.Directory.GetCurrentDirectory()+ @"\Data\Words.txt").Split(new string[] { "\n", "\r\n" }, StringSplitOptions.RemoveEmptyEntries).ToList();
+         List<string> _words = System.IO.File.ReadAllText(System.IO.Directory.GetCurrentDirectory()+ @"\Data\Words.txt").Split(new string[] { "\n", "\r\n" }, StringSplitOptions.RemoveEmptyEntries).ToList();
 
         /// <summary>
         /// Find out if the string exist in the Lexicon.
@@ -45,17 +58,9 @@ namespace AlgorithmsLibrary.DataStructures
         /// <returns></returns>
         public bool WordExists(string str)
         {
-            return (words.Contains(str) || words.Contains(str.ToLower()) || words.Contains(str.ToUpper())) ;
+            return (Dictionary.Contains(str) || Dictionary.Contains(str.ToLower()) || Dictionary.Contains(str.ToUpper()) || Dictionary.Contains(CultureInfo.CurrentCulture.TextInfo.ToTitleCase(str))) ;
         }
 
-        /// <summary>
-        /// Returns the list of words which contains the sting that is passed
-        /// </summary>
-        /// <param name="str"></param>
-        /// <returns></returns>
-        public  List<string> WordsLike(string str)
-        {
-            return words.FindAll(s => {return s.Contains(str);});
-        }
+        
     }
 }
