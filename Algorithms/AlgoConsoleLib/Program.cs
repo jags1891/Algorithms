@@ -5,6 +5,7 @@ using AlgorithmsLibrary.Graphs;
 using AlgorithmsLibrary.Arrays;
 using AlgorithmsLibrary.Sorting;
 using AlgorithmsLibrary.DataStructures;
+using AlgorithmsLibrary.Bitwise;
 
 namespace AlgoConsoleLib
 {
@@ -113,7 +114,13 @@ namespace AlgoConsoleLib
             int i= wordLadder.LadderLength("hit", "cog", ref strpath);
             Console.WriteLine(strpath);
 
-        }
+            HammingWeight hw = new HammingWeight();
+            int[] hw_1 = { 31,51};
+            Console.WriteLine("Hamming Weight of hw_1 = { 31,51} = "+ hw.GetHammingWeightbyPreprocessing(hw_1));
+
+
+
+        }   
 
 
         public static void printArray(int[] arr)

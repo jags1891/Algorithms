@@ -43,6 +43,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Arrays\Misc.cs" />
+    <Compile Include="Bitwise\HammingWeight.cs" />
     <Compile Include="DataStructures\BinaryTree.cs" />
     <Compile Include="DataStructures\MyLexicon.cs" />
     <Compile Include="Graphs\WordLadder.cs" />
