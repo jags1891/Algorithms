@@ -37,7 +37,6 @@ namespace AlgorithmsLibrary.Bitwise
 
                     n >>= 1;
                 }
-
             }
 
             return count;
@@ -45,7 +44,7 @@ namespace AlgorithmsLibrary.Bitwise
 
         /// <summary>
         /// Hamming weight method 2 by toggling (Brian Kernighan algorithm)
-        /// n=(n & n-1) => n & n-1 always toggles right most set bit
+        /// n=(n&n-1)=>(n&n-1) always toggles right most set bit
         /// </summary>
         /// <param name="intArr"></param>
         /// <returns></returns>
@@ -62,7 +61,6 @@ namespace AlgorithmsLibrary.Bitwise
                     n = n & (n - 1);
                     count++;
                 }
-
             }
 
             return count;
@@ -88,13 +86,13 @@ namespace AlgorithmsLibrary.Bitwise
             {
                 uint n = (uint)intArr[i];
 
-                while (n > 0) {
-
+                while (n > 0)
+                {
                     count += table[n & 0x0f];
                     n >>= 4;
-
                 }
             }
+
             return count;
         }
     }
