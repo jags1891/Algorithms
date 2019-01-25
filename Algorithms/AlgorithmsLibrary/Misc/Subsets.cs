@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace AlgorithmsLibrary.Misc
 {
+    /// <summary>
+    /// Subsets
+    /// </summary>
     public class Subsets
     {
         /// <summary>
