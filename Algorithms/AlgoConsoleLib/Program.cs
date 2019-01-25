@@ -120,8 +120,10 @@ namespace AlgoConsoleLib
             Console.WriteLine("Hamming Weight of hw_1 = { 31,51} = "+ hw.GetHammingWeightbyPreprocessing(hw_1));
 
             Fibonacci fib = new Fibonacci();
-            Console.WriteLine("5th Fibonacci number is : " + fib.FibDP(5));
-
+            Console.WriteLine("6th Fibonacci number by rec is : " + fib.FibRecursive(6));
+            Console.WriteLine("6th Fibonacci number by DP is : " + fib.FibDP(6));
+            Console.WriteLine("6th Fibonacci number by Bottomup is : " + fib.FibBottomUp(6));
+           
 
 
         }   
