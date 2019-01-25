@@ -6,6 +6,7 @@ using AlgorithmsLibrary.Arrays;
 using AlgorithmsLibrary.Sorting;
 using AlgorithmsLibrary.DataStructures;
 using AlgorithmsLibrary.Bitwise;
+using AlgorithmsLibrary.Misc;
 
 namespace AlgoConsoleLib
 {
@@ -117,6 +118,9 @@ namespace AlgoConsoleLib
             HammingWeight hw = new HammingWeight();
             int[] hw_1 = { 31,51};
             Console.WriteLine("Hamming Weight of hw_1 = { 31,51} = "+ hw.GetHammingWeightbyPreprocessing(hw_1));
+
+            Fibonacci fib = new Fibonacci();
+            Console.WriteLine("5th Fibonacci number is : " + fib.FibDP(5));
 
 
 
