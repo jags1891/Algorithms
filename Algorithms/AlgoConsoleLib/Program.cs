@@ -123,7 +123,12 @@ namespace AlgoConsoleLib
             Console.WriteLine("6th Fibonacci number by rec is : " + fib.FibRecursive(6));
             Console.WriteLine("6th Fibonacci number by DP is : " + fib.FibDP(6));
             Console.WriteLine("6th Fibonacci number by Bottomup is : " + fib.FibBottomUp(6));
-           
+
+            Subsets subsets = new Subsets();
+            int[] arrSS = new int[] { 2, 4, 6, 10 };
+            Console.WriteLine("No. of subsets whose sum is 16 in { 2, 4, 6, 10 } : " + subsets.CountSubsetsDP(arrSS,16));
+
+
 
 
         }   

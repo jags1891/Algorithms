@@ -48,6 +48,7 @@
     <Compile Include="DataStructures\MyLexicon.cs" />
     <Compile Include="Graphs\WordLadder.cs" />
     <Compile Include="Misc\Fibonacci.cs" />
+    <Compile Include="Misc\Subsets.cs" />
     <Compile Include="Sorting\BubbleSort.cs" />
     <Compile Include="Sorting\SelectionSort.cs" />
     <Compile Include="Strings\Anagram.cs" />
