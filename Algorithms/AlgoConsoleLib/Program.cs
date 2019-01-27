@@ -139,6 +139,13 @@ namespace AlgoConsoleLib
             Console.WriteLine("Merged Sorted array for the sorted arrays { 0, 3, 4} and { 2, 4, 6, 10 } : ");
             printArray( ma.MergeSortedArrays(arrSorted1, arrSorted2));
 
+            MoveZeros mz = new MoveZeros();
+            Console.WriteLine("Move Zeros from {0,0,1} ");
+            int[] mzA = new int[] { 0, 0, 1 };
+            mz.MoveZeroes(mzA);
+            printArray(mzA);
+
+
         }   
 
 

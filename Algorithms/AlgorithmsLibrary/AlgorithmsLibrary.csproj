@@ -42,9 +42,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Arrays\Duplicates.cs" />
     <Compile Include="Arrays\HasPairWithSum.cs" />
     <Compile Include="Arrays\MergeArrays.cs" />
     <Compile Include="Arrays\Misc.cs" />
+    <Compile Include="Arrays\MoveZeros.cs" />
     <Compile Include="Arrays\Reverse.cs" />
     <Compile Include="Arrays\TwoSum.cs" />
     <Compile Include="Bitwise\HammingWeight.cs" />
