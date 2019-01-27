@@ -125,8 +125,11 @@ namespace AlgoConsoleLib
             Console.WriteLine("6th Fibonacci number by Bottomup is : " + fib.FibBottomUp(6));
 
             Subsets subsets = new Subsets();
-            int[] arrSS = new int[] { 2, 4, 6, 10 };
+            int[] arrSS = new int[] { 2, 4, 6, 10};
             Console.WriteLine("No. of subsets whose sum is 16 in { 2, 4, 6, 10 } : " + subsets.CountSubsetsDP(arrSS,16));
+
+            HasPairWithSum obj = new HasPairWithSum();
+            Console.WriteLine("Does the array { 2, 4, 6, 10 } has a pair whose sum is 12: " + obj.isPairWithSumExists(arrSS,12));
 
 
 

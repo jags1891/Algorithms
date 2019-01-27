@@ -42,6 +42,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Arrays\HasPairWithSum.cs" />
     <Compile Include="Arrays\Misc.cs" />
     <Compile Include="Bitwise\HammingWeight.cs" />
     <Compile Include="DataStructures\BinaryTree.cs" />
