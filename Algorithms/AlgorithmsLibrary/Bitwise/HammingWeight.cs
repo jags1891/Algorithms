@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace AlgorithmsLibrary.Bitwise
+﻿namespace AlgorithmsLibrary.Bitwise
 {
     /// <summary>
     /// We're given a large array of 4-byte integers. 
