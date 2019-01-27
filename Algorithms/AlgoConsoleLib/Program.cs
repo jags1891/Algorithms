@@ -28,6 +28,7 @@ namespace AlgoConsoleLib
 
         static void Main(string[] args)
         {
+            var a = Math.Pow(10000000, 9897989965646467576);
             var path = new List<int>();
             var Prev = new Dictionary<int, int>();
 
@@ -131,8 +132,12 @@ namespace AlgoConsoleLib
             HasPairWithSum obj = new HasPairWithSum();
             Console.WriteLine("Does the array { 2, 4, 6, 10 } has a pair whose sum is 12: " + obj.isPairWithSumExists(arrSS,12));
 
+            MergeArrays ma = new MergeArrays();
+            int[] arrSorted2 = new int[] { 0, 3, 4};
+            int[] arrSorted1 = new int[] { 2, 4, 6, 10 };
 
-
+            Console.WriteLine("Merged Sorted array for the sorted arrays { 0, 3, 4} and { 2, 4, 6, 10 } : ");
+            printArray( ma.MergeSortedArrays(arrSorted1, arrSorted2));
 
         }   
 
@@ -140,7 +145,7 @@ namespace AlgoConsoleLib
         public static void printArray(int[] arr)
         {
             int n = arr.Length;
-            for (int i = 0; i < n; ++i)
+            for (int i = 0; i < n; ++i) 
                 Console.Write(arr[i] + " ");
             Console.WriteLine();
         }

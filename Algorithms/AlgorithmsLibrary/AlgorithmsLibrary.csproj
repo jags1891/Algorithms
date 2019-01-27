@@ -43,7 +43,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Arrays\HasPairWithSum.cs" />
+    <Compile Include="Arrays\MergeArrays.cs" />
     <Compile Include="Arrays\Misc.cs" />
+    <Compile Include="Arrays\Reverse.cs" />
     <Compile Include="Bitwise\HammingWeight.cs" />
     <Compile Include="DataStructures\BinaryTree.cs" />
     <Compile Include="DataStructures\MyLexicon.cs" />
