@@ -145,6 +145,11 @@ namespace AlgoConsoleLib
             mz.MoveZeroes(mzA);
             printArray(mzA);
 
+            FirstRecurring fr = new FirstRecurring();
+            int[] fra = new int[] { 2, 5, 1, 2, 3, 5, 1, 2, 4 };
+            Console.WriteLine("First recurring element in  { 2, 5, 1, 2, 3, 5, 1, 2, 4 } is: " + fr.GetFirstRecurringElement<int>(fra));
+
+
 
         }   
 

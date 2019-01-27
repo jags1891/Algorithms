@@ -43,6 +43,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Arrays\Duplicates.cs" />
+    <Compile Include="Arrays\FirstRecurring.cs" />
     <Compile Include="Arrays\HasPairWithSum.cs" />
     <Compile Include="Arrays\MergeArrays.cs" />
     <Compile Include="Arrays\Misc.cs" />
