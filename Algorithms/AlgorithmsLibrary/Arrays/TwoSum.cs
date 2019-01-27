@@ -23,20 +23,20 @@ namespace AlgorithmsLibrary.Arrays
         /// <returns></returns>
         public int[] GetTwoSum(int[] nums, int target)
         {
-            HashSet<int> map = new HashSet<int>();
             Dictionary<int, int> dic = new Dictionary<int, int>();
-
             int[] res = new int[2];
+            int temp = 0;
+
             for (int i = 0; i < nums.Length; i++)
             {
-                if (map.Contains(nums[i]))
+                temp = target - nums[i];
+
+                if (dic.ContainsKey(temp))
                 {
-                    res[0] = dic[target - nums[i]];
+                    res[0] = dic[temp];
                     res[1] = i;
                     return res;
                 }
-
-                map.Add(target - nums[i]);
 
                 if (!dic.ContainsKey(nums[i]))
                     dic.Add(nums[i], i);
