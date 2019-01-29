@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace AlgorithmsLibrary.Graphs
 {
     /// <summary>
-    /// Islands Graph Problems
+    /// Islands Graph Problems ( Improve)
     /// </summary>
     public class Islands
     {
@@ -23,8 +23,8 @@ namespace AlgorithmsLibrary.Graphs
         /// <returns></returns>
         public int countIslands(int[,] Matrix)
         {
-            colCount = Matrix.GetLength(0);
-            rowCount = Matrix.GetLength(1);
+            colCount = Matrix.GetLength(1);
+            rowCount = Matrix.GetLength(0);
 
             bool[,] visited= new bool[rowCount, colCount];
 
@@ -56,9 +56,9 @@ namespace AlgorithmsLibrary.Graphs
         {
             visited[row, col] = true;
 
-            //for (int i = 0; i < 8; i++)
-                //if(isSafeToTraverse(Matrix, row+adjRows[i], col+adjCols[i], visited))
-                  //  BFS(Matrix, row + adjRows[i], col + adjCols[i], visited);
+            for (int i = 0; i < 8; i++)
+               if(isSafeToTraverse(Matrix, row+adjRows[i], col+adjCols[i], visited))
+                   DFS(Matrix, row + adjRows[i], col + adjCols[i], visited);
         }
 
         /// <summary>
