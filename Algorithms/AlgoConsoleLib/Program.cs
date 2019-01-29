@@ -28,6 +28,7 @@ namespace AlgoConsoleLib
 
         static void Main(string[] args)
         {
+            Console.Write(20 % 10);
             var a = Math.Pow(10000000, 9897989965646467576);
             var path = new List<int>();
             var Prev = new Dictionary<int, int>();
@@ -149,10 +150,20 @@ namespace AlgoConsoleLib
             int[] fra = new int[] { 2, 5, 1, 2, 3, 5, 1, 2, 4 };
             Console.WriteLine("First recurring element in  { 2, 5, 1, 2, 3, 5, 1, 2, 4 } is: " + fr.GetFirstRecurringElement<int>(fra));
 
+            Islands il = new Islands();
+            int[,] M = new int[,] {{1, 1, 0, 0, 0},
+                               {0, 1, 0, 0, 1},
+                               {1, 0, 0, 1, 1},
+                               {0, 0, 0, 0, 0},
+                               {1, 0, 1, 0, 1}};
+            Console.Write("Number of islands is: " +
+                                   il.countIslands(M));
 
 
+          
         }   
 
+       
 
         public static void printArray(int[] arr)
         {

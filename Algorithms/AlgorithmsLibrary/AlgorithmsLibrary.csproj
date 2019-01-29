@@ -42,6 +42,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Arrays\NClosest.cs" />
     <Compile Include="Arrays\Duplicates.cs" />
     <Compile Include="Arrays\FirstRecurring.cs" />
     <Compile Include="Arrays\HasPairWithSum.cs" />
@@ -54,6 +55,7 @@
     <Compile Include="DataStructures\BinaryTree.cs" />
     <Compile Include="DataStructures\MyLexicon.cs" />
     <Compile Include="DataStructures\SinglyLinkedList.cs" />
+    <Compile Include="Graphs\Islands.cs" />
     <Compile Include="Graphs\WordLadder.cs" />
     <Compile Include="Misc\Fibonacci.cs" />
     <Compile Include="Misc\Subsets.cs" />
