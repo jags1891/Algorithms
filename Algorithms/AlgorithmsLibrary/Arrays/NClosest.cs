@@ -18,7 +18,6 @@ namespace AlgorithmsLibrary.Arrays
         /// <returns></returns>
         public List<List<int>> FindNClosestRestaurants(int totalRestaurants, int[,] allLocations, int n)
         {
-
             Dictionary<double, List<int>> dic = new Dictionary<double, List<int>>();
 
             for (int i = 0; i <= allLocations.GetUpperBound(0); i++)
