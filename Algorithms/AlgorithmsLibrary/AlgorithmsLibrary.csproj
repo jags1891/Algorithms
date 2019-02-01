@@ -58,6 +58,7 @@
     <Compile Include="Graphs\Islands.cs" />
     <Compile Include="Graphs\WordLadder.cs" />
     <Compile Include="Misc\Fibonacci.cs" />
+    <Compile Include="Misc\ReverseInt.cs" />
     <Compile Include="Misc\Subsets.cs" />
     <Compile Include="Sorting\BubbleSort.cs" />
     <Compile Include="Sorting\SelectionSort.cs" />
@@ -65,6 +66,7 @@
     <Compile Include="DataStructures\Graph.cs" />
     <Compile Include="Graphs\GraphSearch.cs" />
     <Compile Include="Graphs\TopologicalSort.cs" />
+    <Compile Include="Strings\LongestPalindromicSubstring.cs" />
     <Compile Include="Strings\Palindrome.cs" />
     <Compile Include="Strings\ValidParentheses.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

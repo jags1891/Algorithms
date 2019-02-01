@@ -159,8 +159,10 @@ namespace AlgoConsoleLib
             Console.Write("Number of islands is: " +
                                    il.countIslands(M));
 
+            LongestPalindromicSubstring lss = new LongestPalindromicSubstring();
+            Console.Write("LongestPalindrome in 'babad' : " + lss.LongestPalindrome("cbbd"));
 
-          
+
         }   
 
        
@@ -172,7 +174,7 @@ namespace AlgoConsoleLib
                 Console.Write(arr[i] + " ");
             Console.WriteLine();
         }
-
+                
         public static IEnumerable<int> TopSort()
         {
             int[] vertices = new[] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11 };
