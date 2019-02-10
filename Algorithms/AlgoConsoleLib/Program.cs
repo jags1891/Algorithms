@@ -106,6 +106,12 @@ namespace AlgoConsoleLib
             Console.Write("arr = { 64, 34, 25, 12, 22, 11, 90 } => Sorted array = ");
             printArray(arr);
 
+            int[] ar= { 99, 44, 6, 2, 1, 5, 63, 87, 283, 4, 0};
+            InsertionSort Isort = new InsertionSort();
+            Isort.SortByShift(ar);
+            Console.Write("arr = { 99, 44, 6, 2, 1, 5, 63, 87, 283, 4, 0} => Insertion Sorted array = ");
+            printArray(ar);
+
             int[] arr_1 = { 64, 34, 25, 12, 22, 11, 90 };
             SelectionSort sSort = new SelectionSort();
             sSort.Sort(arr_1);
@@ -119,7 +125,7 @@ namespace AlgoConsoleLib
 
             HammingWeight hw = new HammingWeight();
             int[] hw_1 = { 31,51};
-            Console.WriteLine("Hamming Weight of hw_1 = { 31,51} = "+ hw.GetHammingWeightbyPreprocessing(hw_1));
+            Console.WriteLine("Hamming Weight of hw_1 = {    31,51} = "+ hw.GetHammingWeightbyPreprocessing(hw_1));
 
             Fibonacci fib = new Fibonacci();
             Console.WriteLine("6th Fibonacci number by rec is : " + fib.FibRecursive(6));

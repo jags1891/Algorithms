@@ -61,6 +61,7 @@
     <Compile Include="Misc\ReverseInt.cs" />
     <Compile Include="Misc\Subsets.cs" />
     <Compile Include="Sorting\BubbleSort.cs" />
+    <Compile Include="Sorting\InsertionSort.cs" />
     <Compile Include="Sorting\SelectionSort.cs" />
     <Compile Include="Strings\Anagram.cs" />
     <Compile Include="DataStructures\Graph.cs" />
