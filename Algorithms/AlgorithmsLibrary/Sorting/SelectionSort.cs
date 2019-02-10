@@ -9,7 +9,7 @@
         public void Sort(int[] arr)
         {
             int length = arr.Length;
-
+        
             for (int i = 0; i < length - 1; i++)
             {
                 int low = GetSmallestValueIndex(arr, i);
@@ -32,7 +32,6 @@
             {
                 if (arr[i] == arr[minInd] || arr[i] < arr[minInd])
                     minInd = i;
-
             }
 
             return minInd;
