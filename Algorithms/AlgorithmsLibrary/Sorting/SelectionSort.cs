@@ -27,11 +27,10 @@
         /// <returns></returns>
         private int GetSmallestValueIndex(int[] arr, int start)
         {
-            int min = arr[start];
             int minInd = start;
             for(int i=start;i<arr.Length-1; i++)
             {
-                if (arr[i] == min || arr[i] < min)
+                if (arr[i] == arr[minInd] || arr[i] < arr[minInd])
                     minInd = i;
 
             }
