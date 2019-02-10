@@ -107,10 +107,10 @@ namespace AlgoConsoleLib
             printArray(arr);
 
             int[] ar= { 99, 44, 6, 2, 1, 5, 63, 87, 283, 4, 0};
-            InsertionSort Isort = new InsertionSort();
-            Isort.SortByShift(ar);
+            MergeSort ms = new MergeSort();
+
             Console.Write("arr = { 99, 44, 6, 2, 1, 5, 63, 87, 283, 4, 0} => Insertion Sorted array = ");
-            printArray(ar);
+            printArray(ms.MSort(ar));
 
             int[] arr_1 = { 64, 34, 25, 12, 22, 11, 90 };
             SelectionSort sSort = new SelectionSort();
