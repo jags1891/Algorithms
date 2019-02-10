@@ -58,7 +58,6 @@ namespace AlgorithmsLibrary.Sorting
             {
                 for (int i = rightIndex; i < right.Length; i++)
                     merged[currInd++] = right[rightIndex++];
-
             }
             else if (rightIndex == right.Length  && leftIndex < left.Length)
             {
