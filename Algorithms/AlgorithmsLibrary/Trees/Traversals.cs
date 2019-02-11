@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using AlgorithmsLibrary.DataStructures;
 
 namespace AlgorithmsLibrary.Trees
@@ -75,7 +76,34 @@ namespace AlgorithmsLibrary.Trees
             int rheight = GetTreeHeight(root.right);
 
             return Math.Max(++lheight, ++rheight);
+        }
 
+        /// <summary>
+        /// Breadth First search or level order traversal
+        /// </summary>
+        public void LevelOrderTraversal(TreeNode root)
+        {
+            if (root == null)
+                return;
+
+            TreeNode curr = null;
+            Queue<TreeNode> queue = new Queue<TreeNode>();
+            List<int> visited = new List<int>();
+            queue.Enqueue(root);
+
+            while (queue.Count > 0)
+            {
+                curr = queue.Dequeue();
+                visited.Add(curr.value);
+
+                if (curr.left != null)
+                    queue.Enqueue(curr.left);
+                if (curr.right != null)
+                    queue.Enqueue(curr.right);
+            }
+
+            foreach (int i in visited)
+                Console.Write(i + " ");
         }
 
     }
