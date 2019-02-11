@@ -35,6 +35,21 @@ namespace AlgorithmsLibrary.Trees
         }
 
         /// <summary>
+        /// Inorder (Left, Root, Right) 
+        /// </summary>
+        /// <param name="root"></param>
+        /// <param name="lst"></param>
+        public void Inorder(TreeNode root, List<int> lst)
+        {
+            if (root == null)
+                return;
+
+            Inorder(root.left, lst);
+            lst.Add(root.value);
+            Inorder(root.right, lst);
+        }
+
+        /// <summary>
         /// Preorder (Root, Left, Right)
         /// </summary>
         /// <param name="root"></param>
