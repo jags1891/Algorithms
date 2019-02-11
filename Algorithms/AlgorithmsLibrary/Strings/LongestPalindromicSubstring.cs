@@ -1,13 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace AlgorithmsLibrary.Strings
+﻿namespace AlgorithmsLibrary.Strings
 {
     public class LongestPalindromicSubstring
     {
+        /// <summary>
+        /// To be improved
+        /// </summary>
+        /// <param name="s"></param>
+        /// <returns></returns>
         public string LongestPalindrome(string s)
         {
             if (s.Length < 2)
