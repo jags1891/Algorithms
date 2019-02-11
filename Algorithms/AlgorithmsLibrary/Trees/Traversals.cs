@@ -61,5 +61,22 @@ namespace AlgorithmsLibrary.Trees
             Console.Write(root.value + " ");
         }
 
+        /// <summary>
+        /// Get tree height
+        /// </summary>
+        /// <param name="root"></param>
+        /// <returns></returns>
+        public int GetTreeHeight(TreeNode root)
+        {
+            if(root == null)
+                return 0;
+
+            int lheight = GetTreeHeight(root.left);
+            int rheight = GetTreeHeight(root.right);
+
+            return Math.Max(++lheight, ++rheight);
+
+        }
+
     }
 }

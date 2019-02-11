@@ -186,6 +186,8 @@ namespace AlgoConsoleLib
             trav.printPostOrder(tree.root);
             Console.WriteLine("");
 
+            Console.Write("The height of the tree is : " + trav.GetTreeHeight(tree.root));
+
         }   
 
        
