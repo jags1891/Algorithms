@@ -10,7 +10,6 @@ namespace AlgorithmsLibrary.Trees
     /// </summary>
     public class IsValidBST
     {
-
         /// <summary>
         /// isValidBST
         /// </summary>
