@@ -7,6 +7,7 @@ using AlgorithmsLibrary.Sorting;
 using AlgorithmsLibrary.DataStructures;
 using AlgorithmsLibrary.Bitwise;
 using AlgorithmsLibrary.Misc;
+using AlgorithmsLibrary.Trees;
 
 namespace AlgoConsoleLib
 {
@@ -169,6 +170,21 @@ namespace AlgoConsoleLib
             LongestPalindromicSubstring lss = new LongestPalindromicSubstring();
             Console.Write("LongestPalindrome in 'babad' : " + lss.LongestPalindrome("cbbd"));
 
+
+            BinaryTree tree = new BinaryTree();
+            tree.root = new TreeNode(1);
+            tree.root.left = new TreeNode(2);
+            tree.root.right = new TreeNode(3);
+            tree.root.left.left = new TreeNode(4);
+            tree.root.left.right = new TreeNode(5);
+            Console.WriteLine("");
+            Traversals trav = new Traversals();
+            trav.printInorder(tree.root);
+            Console.WriteLine("");
+            trav.printPreorder(tree.root);
+            Console.WriteLine("");
+            trav.printPostOrder(tree.root);
+            Console.WriteLine("");
 
         }   
 
