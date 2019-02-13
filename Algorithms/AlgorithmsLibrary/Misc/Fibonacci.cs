@@ -15,7 +15,7 @@ namespace AlgorithmsLibrary.Misc
         /// <returns></returns>
         public int FibRecursive(int n)
         {
-            if (n <=2)
+            if (n <2)
                 return n;
 
             return FibRecursive(n - 1) + FibRecursive(n - 2);
@@ -28,10 +28,9 @@ namespace AlgorithmsLibrary.Misc
         /// <returns></returns>
         public int FibDP(int n)
         {
-            int[] memo = new int[n];
+            int[] memo = new int[n+1];
             memo[0] = 0;
             memo[1] = 1;
-            memo[2] = 2;
             return (FibDPUtil(n, memo));
         }
 
@@ -42,7 +41,7 @@ namespace AlgorithmsLibrary.Misc
 
             int result = 0;
 
-            if (n <= 2)
+            if (n < 2)
                 return n;
             else
                 result = FibDPUtil(n - 1, memo) + FibDPUtil(n - 2, memo);
@@ -59,10 +58,10 @@ namespace AlgorithmsLibrary.Misc
         /// <returns></returns>
         public int FibBottomUp(int n)
         {
-            if (n <= 2)
+            if (n < 2)
                 return n;
 
-            int[] bottomUp = new int[n];
+            int[] bottomUp = new int[n+1];
             bottomUp[0] = 0;
             bottomUp[1] = 1;
 
