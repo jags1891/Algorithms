@@ -3,54 +3,53 @@
 namespace AlgorithmsLibrary.Misc
 {
     /// <summary>
-    /// 
+    /// Fib series : 0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233...
     /// </summary>
     public class Fibonacci
     {
         /// <summary>
         /// find nth fibonacci number recursively
+        /// O(2^n)
         /// </summary>
         /// <param name="n"></param>
         /// <returns></returns>
         public int FibRecursive(int n)
         {
-            if (n == 1 || n == 2)
-                return 1;
+            if (n <=2)
+                return n;
 
             return FibRecursive(n - 1) + FibRecursive(n - 2);
-
         }
 
         /// <summary>
-        /// Find nth fibonacci number using memoization
+        /// Find nth fibonacci number using memoization o(n)
         /// </summary>
         /// <param name="n"></param>
         /// <returns></returns>
         public int FibDP(int n)
         {
-            if(n==0)
-                throw new InvalidOperationException();
-
             int[] memo = new int[n];
+            memo[0] = 0;
+            memo[1] = 1;
+            memo[2] = 2;
             return (FibDPUtil(n, memo));
         }
 
         private int FibDPUtil(int n, int[] memo)
         {
-            if (memo[n-1] != 0)
-                return memo[n-1];
+            if (memo[n] != 0)
+                return memo[n];
 
             int result = 0;
 
-            if (n == 1 || n == 2)
-                result = 1;
+            if (n <= 2)
+                return n;
             else
                 result = FibDPUtil(n - 1, memo) + FibDPUtil(n - 2, memo);
 
-            memo[n-1] = result;
+            memo[n] = result;
 
             return result;
-
         }
 
         /// <summary>
@@ -60,14 +59,11 @@ namespace AlgorithmsLibrary.Misc
         /// <returns></returns>
         public int FibBottomUp(int n)
         {
-            if (n == 0)
-                throw new InvalidOperationException();
-
-            if (n == 1 || n == 2)
-                return 1;
+            if (n <= 2)
+                return n;
 
             int[] bottomUp = new int[n];
-            bottomUp[0] = 1;
+            bottomUp[0] = 0;
             bottomUp[1] = 1;
 
             for(int i=2; i<n; i++)
