@@ -3,7 +3,9 @@
 namespace AlgorithmsLibrary.Misc
 {
     /// <summary>
+    /// 
     /// Leet code problem
+    /// 
     /// Best Time to Buy and Sell Stock
     /// Say you have an array for which the ith element is the price of a given stock on day i.
     /// If you were only permitted to complete at most one transaction(i.e., buy one and sell one share of the stock), design an algorithm to find the maximum profit.
@@ -14,6 +16,7 @@ namespace AlgorithmsLibrary.Misc
     {
         /// <summary>
         /// Get Max profit
+        /// 
         /// Example 1:
         /// Input: [7,1,5,3,6,4]
         /// Output: 5
@@ -24,6 +27,7 @@ namespace AlgorithmsLibrary.Misc
         /// Input: [7,6,4,3,1]
         /// Output: 0
         /// Explanation: In this case, no transaction is done, i.e. max profit = 0.
+        /// 
         /// </summary>
         /// <param name="prices"></param>
         /// <returns></returns>
