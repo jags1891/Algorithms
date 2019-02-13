@@ -58,6 +58,7 @@
     <Compile Include="Graphs\Islands.cs" />
     <Compile Include="Graphs\WordLadder.cs" />
     <Compile Include="Misc\Fibonacci.cs" />
+    <Compile Include="Misc\MaxProfit.cs" />
     <Compile Include="Misc\ReverseInt.cs" />
     <Compile Include="Misc\Subsets.cs" />
     <Compile Include="Sorting\BubbleSort.cs" />
