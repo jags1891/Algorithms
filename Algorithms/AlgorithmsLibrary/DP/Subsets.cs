@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace AlgorithmsLibrary.Misc
+namespace AlgorithmsLibrary.DP
 {
     /// <summary>
     /// Subsets

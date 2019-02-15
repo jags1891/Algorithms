@@ -8,6 +8,7 @@ using AlgorithmsLibrary.DataStructures;
 using AlgorithmsLibrary.Bitwise;
 using AlgorithmsLibrary.Misc;
 using AlgorithmsLibrary.Trees;
+using AlgorithmsLibrary.DP;
 
 namespace AlgoConsoleLib
 {
