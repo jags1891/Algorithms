@@ -42,6 +42,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Arrays\ProblemSet1.cs" />
     <Compile Include="Arrays\NClosest.cs" />
     <Compile Include="Arrays\Duplicates.cs" />
     <Compile Include="Arrays\FirstRecurring.cs" />
@@ -72,6 +73,7 @@
     <Compile Include="Graphs\TopologicalSort.cs" />
     <Compile Include="Strings\LongestPalindromicSubstring.cs" />
     <Compile Include="Strings\Palindrome.cs" />
+    <Compile Include="Strings\ProblemSett1.cs" />
     <Compile Include="Strings\ValidParentheses.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Trees\IsValidBST.cs" />
