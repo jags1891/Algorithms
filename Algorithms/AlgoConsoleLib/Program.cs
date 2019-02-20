@@ -30,8 +30,16 @@ namespace AlgoConsoleLib
 
         static void Main(string[] args)
         {
-            Console.Write(20 % 10);
-            var a = Math.Pow(10000000, 9897989965646467576);
+
+            int[] bst= { 2, 3, 4, 10, 40 };
+            BinarySearch binarySearch = new BinarySearch();
+            int n = bst.Length;
+            int x = 10;
+    
+            Console.WriteLine("Recurcive: The index is " + binarySearch.BinarySearchRecursive(bst, 0, n - 1, x));
+            Console.WriteLine("Itirative: The index is " + binarySearch.BinarySearchItirative(bst, x));
+
+
             var path = new List<int>();
             var Prev = new Dictionary<int, int>();
 
