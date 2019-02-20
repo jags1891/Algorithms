@@ -30,6 +30,25 @@ namespace AlgoConsoleLib
 
         static void Main(string[] args)
         {
+            Mine mine = new Mine();
+            int[][] twoD = new int[2][];
+            twoD[0] =  new int[]{0,0};
+            twoD[1] = new int[] {0, 1};
+
+
+            int[,] field = mine.Minesweeper(twoD, 3, 4);
+
+            int mRow = field.GetUpperBound(0);
+            int mCol = field.GetUpperBound(1);
+
+            for(int r = 0; r <= mRow; r++)
+            {
+                for (int c = 0; c <= mCol; c++)
+                {
+                    Console.Write(field[r, c] + " ");
+                }
+                Console.WriteLine("");
+            }   
 
             int[] bst= { 2, 3, 4, 10, 40 };
             BinarySearch binarySearch = new BinarySearch();

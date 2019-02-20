@@ -42,6 +42,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Arrays\Mine.cs" />
     <Compile Include="Arrays\ProblemSet1.cs" />
     <Compile Include="Arrays\NClosest.cs" />
     <Compile Include="Arrays\Duplicates.cs" />
