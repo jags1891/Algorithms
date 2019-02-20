@@ -1,13 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace AlgorithmsLibrary.Arrays
+﻿namespace AlgorithmsLibrary.Arrays
 {
     /// <summary>
-    /// INCOMPLETE
+    /// 
     /// </summary>
     public class MoveZeros
     {
@@ -20,36 +14,14 @@ namespace AlgorithmsLibrary.Arrays
         /// <param name="nums"></param>
         public void MoveZeroes(int[] nums)
         {
+            int nonZeroInd = 0;
+
             for (int i = 0; i < nums.Length; i++)
-            {
-                if (nums[i] == 0)
-                {
-                    for (int ind = i; ind <= nums.Length; ind++)
-                    {   
-                        if (ind + 1 > nums.Length - 1)
-                            break;
- 
-                            nums[ind] = nums[ind + 1];
+                if (nums[i] != 0)
+                    nums[nonZeroInd++] = nums[i];
 
-                    }
-
-                    nums[nums.Length - 1] = 0;
-                }
-                if (nums[i] == 0)
-                {
-                    for (int ind = i; ind <= nums.Length; ind++)
-                    {
-                        if (ind + 1 > nums.Length - 1)
-                            break;
-
-                        nums[ind] = nums[ind + 1];
-
-                    }
-
-                    nums[nums.Length - 1] = 0;
-                }
-
-            }
+            for(int i=nonZeroInd; i<nums.Length;i++)
+                nums[nonZeroInd++] = 0;
         }
     }
 }
