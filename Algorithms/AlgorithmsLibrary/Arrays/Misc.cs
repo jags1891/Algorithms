@@ -1,5 +1,8 @@
 ﻿namespace AlgorithmsLibrary.Arrays
 {
+    /// <summary>
+    /// 
+    /// </summary>
     public class Misc
     {
         /// <summary>
@@ -9,6 +12,8 @@
         ///  What would be a fast method that uses only constant space?
         /// </summary>
         /// <param name="arr"></param>
+        /// <param name="start"></param>
+        /// <param name="last"></param>
         /// <returns></returns>
         public int FindMinInSortedRotated(int[] arr, int start, int last)
         {

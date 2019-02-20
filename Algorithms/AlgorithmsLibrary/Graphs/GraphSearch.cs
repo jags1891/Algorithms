@@ -4,6 +4,9 @@ using AlgorithmsLibrary.DataStructures;
 
 namespace AlgorithmsLibrary.Graphs
 {
+    /// <summary>
+    /// 
+    /// </summary>
     public class GraphSearch
     {
         /// <summary>
