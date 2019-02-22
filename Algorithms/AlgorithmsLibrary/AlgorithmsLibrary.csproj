@@ -62,6 +62,7 @@
     <Compile Include="Graphs\WordLadder.cs" />
     <Compile Include="DP\Fibonacci.cs" />
     <Compile Include="DP\MaxProfit.cs" />
+    <Compile Include="LinkedLists\LinkedListOperatons.cs" />
     <Compile Include="Misc\ReverseInt.cs" />
     <Compile Include="DP\Subsets.cs" />
     <Compile Include="Sorting\BubbleSort.cs" />
