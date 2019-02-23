@@ -1,7 +1,7 @@
 ﻿namespace AlgorithmsLibrary.Arrays
 {
     /// <summary>
-    /// Array Index & Element Equality
+    /// Array Index - Element Equality
     /// </summary>
     public class ArrayIndexEquality
     {
