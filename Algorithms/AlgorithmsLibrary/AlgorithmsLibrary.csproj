@@ -54,6 +54,7 @@
     <Compile Include="Arrays\MoveZeros.cs" />
     <Compile Include="Arrays\Reverse.cs" />
     <Compile Include="Arrays\SingleNumber.cs" />
+    <Compile Include="Arrays\SpecificDiffPairs.cs" />
     <Compile Include="Arrays\TwoSum.cs" />
     <Compile Include="Bitwise\HammingWeight.cs" />
     <Compile Include="DataStructures\BinaryTree.cs" />
